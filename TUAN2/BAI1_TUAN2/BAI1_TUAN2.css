@@ -1,0 +1,26 @@
+table,td,th{
+    border: 2px solid rgb(50, 19, 189);
+}
+table{
+    border-collapse: collapse;
+    background-color: rgb(236, 195, 136);
+    width:400px;
+    height: 120px;
+    border: 2px solid blue; 
+    outline: 2px solid blue;
+    outline-offset: 2px;
+    text-align: left;
+}
+button{
+    border-radius: 10px;
+    border-color: blue;
+    
+}
+button:hover{
+    color: red;
+}
+.container{
+    justify-content: center;
+    display: flex;
+    padding-top: 200px;
+}
