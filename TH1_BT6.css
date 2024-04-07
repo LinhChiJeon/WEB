@@ -1,0 +1,48 @@
+body{
+    background-color:#FFEDCA;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    border-collapse: collapse;
+    text-align: left;
+    align-items: center;
+    vertical-align: middle;
+}
+
+form{
+    display: flex;
+    margin-left: 480px;
+} 
+
+td{
+    width: 150px;
+    font-size: 18px;
+}
+
+.name{
+    color:blue;
+}
+
+.address{
+    color:blue;
+}
+
+.tel{
+    color:blue;
+}
+
+.Phai{
+    color:blue;
+}
+
+.sp{
+    color:blue;
+}
+
+.submit{
+    text-align: center;
+}

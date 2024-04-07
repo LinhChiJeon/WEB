@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <Title>
+            Bài 6
+        </Title>
+        <link rel="stylesheet" type="text/css" href="TH1_BT6.css">
+    </head>
+
+    <body>
+        <h1>Phiếu đăng ký tham gia dự thưởng</h1>
+
+        <style>
+            table,th,td{
+                border: 1px solid black;
+            }
+        </style>
+        
+        <form action="#">
+            <table style="width: 520px;">
+                <tr>
+                    <td>
+                        <div class="name">
+                            <label for="name">Họ và tên</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="name" placeholder="Nguyễn Văn A">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="address">
+                            <label for="address">Địa chỉ</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="text" id="address" placeholder="abc,xyz,jqk" size="50">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="tel">
+                            <label for="tel">Điện thoại</label>
+                        </div>
+
+                    </td>
+                    <td>
+                        <input type="text" id="tel" placeholder="09xxxxxxxx">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="Phai">
+                            <label for="Phai">Phái</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="radio" id="phainam" value="Nam">
+                        <label for="phainam">Nam</label>
+                        <input type="radio" id="phainu" value="Nữ">
+                        <label for="phainu">Nữ</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="sp">
+                            <label for="sp">Sản phẩm</label>
+                        </div>
+                    </td>
+                    <td>
+                        <select size="4">
+                            <option>Iphone 11 Pro Max</option>
+                            <option>Samsung Galaxy Note 20</option>
+                            <option>Xiaomi Redmi K30</option>
+                            <option>OPPO A53</option>
+                            <option>Nokia N900</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="sp">
+                            <label for="number">Số dự đoán</label>
+                        </div>
+                    </td>
+                    <td>
+                        <input type="number" name="number" min="0" max="10" step="1" value="5">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <div class="submit">
+                            <input type="submit" value="Đăng ký">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
