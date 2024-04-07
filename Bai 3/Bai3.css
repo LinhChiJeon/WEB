@@ -1,0 +1,74 @@
+.Menu tr,td,th{
+    
+    width: 500px;
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+.Nhanvien{
+    font-size: 14;
+    color: blue;
+    width: 340px;
+}
+.Menu{
+       display: flex;
+       justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.Menu_table{
+    width: 280px;
+    border-collapse: collapse;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.head_Menu{
+    background-color: #0033CC;
+    color: #CCCC99;
+    font-size: 12;
+    font-weight: 200px;
+}
+
+.tf_choose{
+    height: 160px;
+    /* display: flex;
+    justify-content: center; */
+}
+
+ .tf_choose td {
+    text-align: center;
+    position: relative;
+}
+
+#table_number{
+    position: absolute; 
+    margin-top: -70px;
+    margin-left: -28px;
+} 
+#food_Name {
+    position: absolute; 
+    margin-top: -70px;
+    margin-left: -50px;
+}
+
+
+.number_repcept_Table{
+    border-collapse: collapse;
+}
+
+.table_receipt_1, .table_receipt_2, .table_receipt_3{
+    border-collapse: collapse;
+}
+
+.sl{
+    width: 20px;
+}
+.price{
+    width:40px;
+}

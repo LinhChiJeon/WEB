@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="stylesheet" href="Bai3.css">
+</head>
+<body>
+
+        <div class="ThucDon">
+                <table class ="Menu">
+                        <tr>
+                            <td id="Time"></td>
+                            <td class="Nhanvien">Nhân viên: Huỳnh Quốc Thiên Ân</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"> <h3>Thực Đơn</h3></td>
+                        </tr>
+                        <tr>    
+                            <td  colspan="3">
+                                <table class="Menu_table">
+                                  <tr class="head_Menu">
+                                        <th>Bàn</th>
+                                        <th>Món ăn</th>
+                                  </tr>  
+                                  <tr class="tf_choose">
+                                        <td >
+                                            <select name="table_number" id="table_number">
+                                                <option value="1">Bàn 1</option>
+                                                <option value="2">Bàn 2</option>
+                                                <option value="3">Bàn 3</option>
+                                            </select>
+                                        </td>
+
+                                        <td>
+                                            <select name="food_Name" id="food_Name">
+                                                <option value="20000">Bún bò</option>
+                                                <option value="18000">Hủ tiếu</option>
+                                                <option value="17000">Bánh canh</option>
+                                                <option value="19000">Phở bò</option>
+                                                <option value="15000">Nuôi</option>
+                                                <option value="12000">Bánh mỳ thịt</option>
+                                                <option value="15000">Bánh cuốn</option>
+                                            </select>
+                                        </td>
+                                  </tr>    
+                                </table>
+                            </td>
+                        </tr>
+                </table>   
+        </div>
+
+        <div class ="receipt_Table">
+            <table class="number_repcept_Table"> 
+                <tr>
+                    <th>Bàn 1</th>
+                    <th>Bàn 2</th>
+                    <th>Bàn 3</th>
+                </tr>
+
+                <tr>
+                    <th>
+                        <table class="table_receipt_1">
+                            <tr>
+                                <th>Món</th>
+                                <th>SL</th>
+                                <th>Tiền</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th class="total_Money">Tổng tiền</th>
+                                <th colspan="3" class="calc"></th>
+                            </tr>
+                        </table>
+                            <button class="bill" name="bàn 1">In hóa đơn</button>
+                    </th>
+                    <th>
+                        <table class="table_receipt_2">
+                            <tr>
+                                <th>Món</th>
+                                <th>SL</th>
+                                <th>Tiền</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th class="total_Money">Tổng tiền</th>
+                                <th colspan="3" class="calc"></th>
+                            </tr>
+                        </table>
+                            <button class="bill" name="bàn 2">In hóa đơn</button>
+                    </th>
+
+                    <th>
+                        <table class="table_receipt_3">
+                            <tr>
+                                <th>Món</th>
+                                <th>SL</th>
+                                <th>Tiền</th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th class="total_Money">Tổng tiền</th>
+                                <th colspan="3" class="calc"></th>
+                            </tr>
+                        </table>
+                            <button class="bill" name="bàn 3">In hóa đơn</button>
+                    </th>
+                </tr>
+            </table>
+        </div>
+        <script type="text/javascript" src="Bai3.js">
+        </script>
+</body>
+</html>
