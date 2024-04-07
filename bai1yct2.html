@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bai1.css" tyle="text/css">
+    <script src="D:\web\LAB2\bai1yct2.js"></script>
+    <title>Tính lương</title>
+</head>
+<body>
+    <div class="table">
+    <table>
+        <form name="Tính lương" action ="#" method = "Post">
+            <tr>
+                <td>Lương</td>
+                <td>
+                    <input id="input-luong" type= "test" class="test" name="number" placeholder="1000000" >
+                    
+                </td>
+            </tr>
+            <tr>
+                <td>Hệ số lương</td>
+                <td>
+                    <input id="input-hsl" type="number" class="number" name="quantity" min='0' max='10' step="0.1" value="3.2">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class ="hi">
+                    <button class="tinh" type="button" onclick="calcLuong()">Tính lương tháng</button>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>Lương tháng</td>
+                <td id="total-luong"></td>
+            </tr>
+    </table>
+</div>
+</body>
+</html>
