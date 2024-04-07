@@ -1,0 +1,36 @@
+body{
+    justify-content: center;
+    display: flex;
+    font-size: 22px;
+}
+.bill{
+    width:40%;
+    border:1px solid black ;
+    
+}
+.heading{
+    text-align: center;
+}
+.in4_of_bill{
+    display: flex;
+    padding-left:20px;
+    
+}
+/* .printBill_table,th,td{
+    border:1px solid black;
+} */
+.printBill_table{
+    border-collapse: collapse;
+    display: block;
+    padding-left: 80px;
+    text-align: left;
+    
+}
+#bill_table{
+    width:400px;
+    border-bottom: 1px solid black;
+}
+.tongtien{
+    width: 500px;
+    text-align: left;
+}

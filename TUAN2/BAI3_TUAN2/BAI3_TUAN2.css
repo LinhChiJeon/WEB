@@ -1,0 +1,52 @@
+.datban{
+    display: flex;
+    justify-content: center;
+}
+.table1, td,tr{
+    border: 2px solid black;
+}
+.table1{
+    border-collapse: collapse;
+    width: 800px;   
+}
+#menu{
+    text-align: center;
+}
+.dropdown_menu{
+   height: 200px;
+}
+.table2{
+    border-collapse: collapse;
+    width:200px;
+    margin-left: 270px;
+}
+.table2,th,td{
+    border:2px solid black;   
+}
+#table,#food{
+    margin-bottom: 120px;
+}
+.booking_table{
+    border-collapse: collapse;
+    width: 400px;
+    margin-left: 22px;
+    text-align: center;
+    min-height:150px;
+}
+.inhoadon{
+    padding-top: 30px;
+}
+#food{
+    width:120px;
+}
+.booking_table th,
+.booking_table td {
+    width: 100px; /* Cố định kích thước của cột */
+}
+.booking_table th:first-child,
+.booking_table td:first-child {
+    width: 200px; /* Cố định kích thước của cột đầu tiên (Món ăn) */
+}
+body{
+    background-color: rgb(248, 240, 215);
+}
