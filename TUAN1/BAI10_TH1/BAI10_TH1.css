@@ -1,0 +1,90 @@
+body{
+    margin:0;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 30px;
+    color:grey; 
+    padding-left: 20px;
+}
+.thanhdieuhuong{
+    overflow: hidden; /* bat ki phan tu nao nam ngoai phan tu cha se bi an di*/
+    background-color: rgb(244, 247, 248);
+    width: 20%;
+    display:flex; /* cac ptu con se tro nen linh hoat va co the dc chinh sua = cac thuoc tinh nhu align-content...*/
+    flex-direction: column; /*Cac ptu con dc xep theo chieu tu tren xuong duoi*/
+    align-content: left;
+    margin:auto;   /*Tu dong canh chinh de ptu duoc cach deu */ 
+    border-color: rgb(108, 108, 206);
+    border-style:outset;
+    
+}
+.thanhdieuhuong a{
+    float:left;
+    text-align: left;
+    color:blue;
+    padding:14px 16px;
+    font-size: 16px;
+    text-decoration: none; /* Cac duong link se dc bo cai dong gach chan o duoi*/
+}
+.submenu{
+    float:left; 
+    overflow:hidden;
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    
+
+}
+.submenu .submenu_button{
+    font-size:16px; 
+    border:none;
+    margin:0;
+    color:blue;
+    background-color: inherit;
+    font-family: inherit;
+    padding:14px 16px;
+    text-align: left;
+}
+.thanhdieuhuong a:hover, .submenu:hover .submenu_button{
+    background-color: rgb(241, 190, 190);
+}
+.content{
+    display:none; /*Dung de an ptu nay di, o day la an phan submenu di*/
+    position:absolute;
+    left:530px;
+    background-color: white;
+    width:20%;
+    font-size: 16px;
+   /* -webkit-transition: all 0.5s ease-out;
+   transition: all 0.5s ease-out ;
+   overflow: hidden; */
+}
+.content a{
+    float:left;
+    font-size: 16px;
+    text-decoration: none;
+}
+.content a:hover{
+    color:black;
+}
+.submenu:hover .content{
+    display:flex; /* Hien thi phan submenu khi nhan vao se nam doc (neu muon nam ngang thi de "none"*/
+    flex-direction: column;
+}
+.search{
+    margin-left:20px;
+    margin-bottom: 10px;
+    display: flex; /* lam button va thanh search stick vo voi nhau*/
+    height: 25px;
+}
+.fa-caret-down-right{   
+    display: flex;
+    position: absolute; /*Mui ten co vi tri tuyet doi va k anh huong den ptu khac*/
+    right:10px; /* Nut mui ten nam ben phai */
+}
+.submenu_button{
+    justify-content: space-between;
+    position: relative;
+}
+ 

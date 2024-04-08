@@ -1,0 +1,117 @@
+.overall{
+    padding:15px;
+    background-color: rgb(238, 236, 236);
+}
+body{
+    background-color: rgb(77, 177, 77);
+}
+.header_ofpage img{
+    max-width: 13%; 
+    max-width: auto; 
+}
+.header_ofpage{
+    display: flex;
+    align-items: center;
+    border-style: solid;    
+    background-color: white; 
+}
+header{
+    font-size: 35px;
+    margin-left: 50px;
+}
+.navigation{
+    width: 1000px;      
+    display: flex;    
+    margin-top: -10px;
+}
+.menu{
+    list-style: none;
+    overflow: hidden;
+    display: inline-flex;
+    
+    border:0px solid black;
+    padding-left: 0;
+    font-size: 21px;   
+    background: linear-gradient(black,rgb(4, 117, 47));
+    
+}
+
+.menu a{
+    text-decoration: none;
+    display: block;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+li{
+    border:1px solid black;
+}
+.menu li:hover{
+    display: flex;
+}
+.menu :hover{
+    color:rgb(240, 99, 99);
+    cursor: pointer;
+    transition: all 0.7s ease-out;
+    -webkit-transition:all 0.7s ease-out ;
+    transform: scale(0.95);
+    
+}
+
+.footer_ofpage{
+    display: grid;
+    justify-content: center;
+    margin-top: 10px;
+}
+aside{
+    width:25%;
+    float:right;
+    border: 1px solid rgb(255, 0, 0);
+    background-color: rgb(133, 160, 248);
+    
+    
+}
+.aside_pass{
+    font-size: larger;
+    padding-top: 25px;
+    padding-bottom:60px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: center;
+}
+.passage{
+    width:977px;
+    border: 1px solid blue;
+    
+}
+.section1, .section2{
+    border:1px solid;
+    width: 93%;
+    margin-left: 27px;
+    margin-top:10px;
+    border-color: red;
+}
+p[id="1"]{
+    font-size: inherit;
+    text-align: center;
+}
+p[id="2"]{
+    padding-left:700px
+}
+p[id="3"]{
+    font-size: inherit;
+    text-align: center;
+}
+p[id="4"]{
+    padding-left:700px
+}
+
+.section2{
+    margin-bottom: 30px;
+}
+hr{
+    border-style: solid;
+    color: green;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Phieu dang ky tham gia du thuong</title>
+        <link rel="stylesheet" href="BAI6_TH1.css">
+    </head>
+    <style>
+        table,th,td{
+            border:1px solid black;
+        }
+        
+    
+        .last_row{
+            border-right:none;
+            padding-left: 170px;
+        }       
+    </style>
+    <body>
+        <h1>Phiếu đăng ký tham gia dự thưởng </h1>
+        <div class="pdk_container">
+            
+        <table id="1" style="width:450px">
+            <tr>
+                <th>Họ Và Tên</th>
+                <td>
+                    <input type="text" id="username" placeholder="Nguyen Van A">
+                </td>
+            </tr>
+            <tr>
+                <th>Địa Chỉ</th>
+                <td>
+                    <input type="text" id="address" placeholder="abc,xyz,jqk" style="width: 355px;">
+                </td>
+            </tr>
+            <tr>
+                <th>Điện Thoại</th>
+                <td>
+                    <input type="number" id="phonenumber" placeholder="09xxxxxxxx">
+                </td>
+            </tr>
+            <tr>
+                <th>Phái</th>
+                <td>
+                    <input type="radio">Nam 
+                    <input type="radio">Nu
+                </td>
+            </tr>
+            <tr>
+                <th>Sản Phẩm</th>
+                <td>
+                    <select id="type">
+                        <option value="">Chon 1 san pham</option>
+                        <option value="1">Iphone 11 promax</option>
+                        <option value="2">Samsung Galaxy Note 20</option>
+                        <option value="3">Xiaomi Redmi K30</option>
+                        <option value="4">OPPO A53</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th>Số Dự Đoán</th>
+                <td>
+                    <input id="sodudoan" type="number" min="1" max="1000">
+                </td>
+            </tr>
+
+            <tr >
+                <td colspan="2" style="padding-left: 175px;" ><input type="submit" value="Đăng Ký" ></td> <!-- Merge 2 cells into 1-->
+            </tr>
+        </table>
+        </div>
+        
+    </body>
+</html>
