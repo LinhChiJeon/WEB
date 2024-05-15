@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        <title>sign_up</title>
+        <link rel="stylesheet" href="sign_in.css">
+        <style>
+            .main_container{
+                width:50%; 
+                border:2px solid black;
+                border-radius: 10px;
+                margin-top:100px;
+                background-color: cornsilk;
+            }
+            body{
+                display: flex;
+                justify-content: center;              
+            }
+            .heading_dangnhap,.button_sign_up{
+                display: flex;
+                justify-content: center;              
+            }     
+            .form_sign_up{
+               display: flex;
+               justify-content: center;
+               padding-top:50px;
+            }
+            .input_form{
+                font-size: 25px;
+            }
+            #name_employee{
+                font-size: 25px;
+                margin-left:30px
+            }
+            .button_sign_up{
+                padding-top :30px
+            }
+            button{
+                border-radius: 5px;
+                border: 1px solid red;
+                height: 40px;
+                margin-bottom: 30px
+            }
+            button:hover{
+                background-color: rgb(157, 204, 204);
+            }          
+        </style>
+    
+    </head>
+
+    <body>
+        <div class="main_container">
+            <div class="heading_dangnhap"><h1>Đăng Nhập</h1></div>
+            <hr>
+            <form class="form_sign_up">           
+                                     
+                    <div class="input_form"><label>Tên Nhân Viên</label><input id="name_employee" required type="text" placeholder="nhập tên nhân viên"></div>
+            </form>
+            <hr style="margin-top:50px">
+            <div class="button_sign_up">
+                <button onclick="openWebsite()">Đăng Nhập</button>
+            </div>
+        </div>
+
+    <script> 
+        function openWebsite() {
+        var nameEmployee = document.getElementById("name_employee").value;
+        localStorage.setItem("employee", nameEmployee); //phương thức setItem của localStorage để lưu giá trị tên nhân viên vào "employee" trong localStorage. 
+        // Điều này cho phép chúng ta truyền dữ liệu giữa các tệp HTML.
+        var newWindow = window.open('BAI3_TUAN2.html');
+        newWindow.addEventListener('load', function() {//addEventListener để lắng nghe sự kiện 'load' trên cửa sổ mới được mở ra. Sự kiện này xảy ra khi tệp HTML thứ hai đã được tải hoàn toàn.
+            newWindow.document.getElementById("employee").textContent = localStorage.getItem("employee"); //Gán giá trị của "employee" từ localStorage vào phần tử đã lấy được
+            });          
+        }         
+    </script>
+    </body>
+</html>
